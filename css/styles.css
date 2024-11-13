@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    background: #f0e78c;
+  }
   
   .contenedor {
     margin: 0 auto;
@@ -117,7 +121,9 @@
 /* media queries */
 
 @media screen and (max-width: 992px) {
-
+  body {
+    background: #71a3c4;
+  }
     .cabecera {
         display: flex; 
         flex-direction: column;
@@ -137,6 +143,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    background: #ff8b00;
+  }
     .articulos {
         display: flex;
         flex-direction: column;
