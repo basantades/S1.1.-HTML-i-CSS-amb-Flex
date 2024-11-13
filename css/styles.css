@@ -57,6 +57,31 @@
     padding: 20px;
   }
 
+  
+  /* animacion div logo cabecera */
+
+  .logo:hover {
+    cursor: pointer;
+    animation-duration: 500ms;
+    animation-name: logo-animate;    
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logo-animate {
+    from {
+      background: #ea5455;
+      height: 100%;
+    }
+    to {
+      background: #dd00f1;
+      height: 150%;
+      font-size: 150%;
+      width: calc(25% + 10px);
+      margin: 0;
+    }
+  }
+
+
   /* contenido */
 
   .contenido {
@@ -139,6 +164,17 @@
     .contenido {
         display: flex; 
         flex-direction: column;
+    }
+    @keyframes logo-animate {
+      from {
+      }
+      to {
+        background: #dd00f1;
+        height: 150%;
+        font-size: 150%;
+        width: 100%;
+        margin: 15px;
+      }
     }
 }
 
