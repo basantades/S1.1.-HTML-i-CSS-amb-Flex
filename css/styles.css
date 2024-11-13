@@ -112,3 +112,26 @@
     background: #f0e78c;
     padding: 20px;
   }
+
+  
+/* media queries */
+
+@media screen and (max-width: 992px) {
+
+    .cabecera {
+        display: flex; 
+        flex-direction: column;
+      }
+
+      .menu {
+        width: calc(100% - 40px);
+      }
+      .navmenu {
+        width: calc(100% - 40px);
+      }
+
+    .contenido {
+        display: flex; 
+        flex-direction: column;
+    }
+}
