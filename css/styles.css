@@ -12,8 +12,8 @@
     margin: 0 auto;
     height: 100vh;
     max-width: 1200px;
-    display: grid; 
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
  
@@ -85,8 +85,7 @@
   /* contenido */
 
   .contenido {
-    display: grid; 
-    grid-template-columns: 3fr 1fr;
+    display: flex;
     gap: 20px;
     background: #000;
     padding: 20px;
@@ -94,20 +93,22 @@
   }
 
   section {
-    display: grid; 
-    grid-template-rows: 1fr auto;
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     background: #4e4e6a;
     padding: 20px;
   }
 
   .articulos {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
   main article {
+    flex-basis: calc(50% - 10px);
     background: #1f6cb0;
     padding: 20px;
   }
@@ -118,9 +119,10 @@
   }
 
   aside {
+    flex-basis: 25%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     background: #f63f51;
     padding: 20px;
   }
@@ -150,7 +152,6 @@
     background: #71a3c4;
   }
     .cabecera {
-        display: flex; 
         flex-direction: column;
       }
 
@@ -162,7 +163,6 @@
       }
 
     .contenido {
-        display: flex; 
         flex-direction: column;
     }
     @keyframes logo-animate {
@@ -182,8 +182,7 @@
   body {
     background: #ff8b00;
   }
-    .articulos {
-        display: flex;
-        flex-direction: column;
-      }
+    main article {
+      flex-basis: 100%;
+    }
 }
