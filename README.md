@@ -17,7 +17,7 @@ La estructura de archivos y carpetas es la siguiente:
 /S1.1.-HTML-i-CSS-amb-Flex
 ├── index.html          # Página principal con el contenido HTML
 ├── /css                # Carpeta CSS
-│   └── style.css       # Estilos CSS para el layout
+│   └── styles.css      # Estilos CSS para el layout
 └── README.md           # Este archivo
 ```
 
@@ -29,7 +29,7 @@ La estructura de archivos y carpetas es la siguiente:
 - **HTML5**: Lenguaje de marcado utilizado para la estructura de la página web.
 - **CSS3**: Para los estilos visuales y la creación del diseño responsivo.
 - **Flexbox**: Técnica de CSS para diseñar un layout flexible y centrado.
-- **Media Queries**: Para aplicar estilos específicos según el tamaño de pantalla y hacer el layout verdaderamente responsivo.
+- **Media Queries**: Para aplicar estilos específicos según el tamaño de pantalla y hacer el layout responsivo.
 
 ## Instalación
 
